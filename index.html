@@ -19,27 +19,42 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="container">
+    <ul class="navbar-list">
+      <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#work">Work</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#skills">Skills</a></li>
+      <li class="navbar-item"><a class="navbar-link" href="#interests">Interests</a></li>
+    </ul>
+  </div>
+
   <div class="container">
     <div class="row">
-      <div class="one-half column custom-content">
+      <div class="one-half column">
         <h4>Alexandre Malhao</h4>
-        <p>Software Engineer</p>
+        <p>Full Stack Developer</p>
       </div>
     </div>
   </div>
+
+  <div id="layout"></div>
+
+  <script src="src/app.js"></script>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
