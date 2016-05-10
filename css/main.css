@@ -1,3 +1,104 @@
-.custom-content {
-    margin-top: 25%;
+.header {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.page-section-header {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  font-weight: 600; }
+
+.page-section {
+  border-top: 1px solid #eee;
+  padding: 4rem 0;
+}
+
+.navbar {
+  display: none;
+}
+
+/* Larger than phone */
+@media (min-width: 550px) {
+  .header {
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+  }
+
+  .page-section {
+    padding: 6rem 0;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .header {
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+  }
+
+  /* Navbar */
+  .navbar + .page-section {
+    border-top-width: 0;
+  }
+
+  .navbar {
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    background: #fff;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar-spacer {
+    display: none;
+  }
+
+  .navbar > .container {
+    width: 100%;
+  }
+
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  .navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222;
+  }
+
+  .navbar-link.active {
+    color: #33C3F0;
+  }
+
+  .has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .has-docked-nav .navbar-spacer {
+    display: block;
+  }
+
+  /* Re-overiding the width 100% declaration to match size of % based container */
+  .has-docked-nav .navbar > .container {
+    width: 80%;
+  }
 }
