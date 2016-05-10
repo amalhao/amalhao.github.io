@@ -1,7 +1,10 @@
 .header {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin: 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   text-align: center;
+  background-image: url(../images/profile-background-800x450.jpg);
+  background-size: cover;
 }
 
 .page-section-header {
@@ -12,7 +15,11 @@
 
 .page-section {
   border-top: 1px solid #eee;
-  padding: 4rem 0;
+  padding: 2rem 0;
+}
+
+.download-button {
+  margin-top: 2rem;
 }
 
 .navbar {
@@ -22,8 +29,8 @@
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {
-    margin-top: 18rem;
-    margin-bottom: 18rem;
+    padding-top: 18rem;
+    padding-bottom: 18rem;
   }
 
   .page-section {
@@ -34,8 +41,17 @@
 /* Larger than tablet */
 @media (min-width: 750px) {
   .header {
-    margin-top: 30rem;
-    margin-bottom: 30rem;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+    background-image: url(../images/profile-background-1920x1080.jpg);
+  }
+
+  .page-section {
+    padding: 6rem 0;
+  }
+
+  .download-button {
+    margin-top: 4rem;
   }
 
   /* Navbar */
@@ -62,14 +78,14 @@
   }
 
   .navbar-list {
-    list-style: none;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
   }
 
   .navbar-item {
-    position: relative;
-    float: left;
-    margin-bottom: 0;
+    display: inline;
   }
 
   .navbar-link {
@@ -81,6 +97,7 @@
     text-decoration: none;
     line-height: 6.5rem;
     color: #222;
+    padding: .2em 1em;
   }
 
   .navbar-link.active {
